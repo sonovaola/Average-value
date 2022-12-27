@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Вывод среднего числа</title>
+</head>
+<body>
+<script>
+
+let a = parseInt(+prompt("Введите первое число: "));
+
+let b = parseInt(+prompt("Введите второе число: "));
+
+let c = parseInt(+prompt("Введите третье число: "));
+
+let sum = Number (a) + Number(b) + Number(c);
+
+if (Number.isNaN (a)){
+	alert ('Error: a is not number')
+	}
+	
+	else if (Number.isNaN (b)){
+		alert ('Error: b is not a number')
+		}
+	else if (Number.isNaN (c)){
+		alert ('Error: c is not a number')
+		} 
+ 
+alert ("Среднее арифметическое ваших трех чисел: " + (sum / 3));
+
+
+
+if (!Number.isNaN (a) && !Number.isNaN (b) && !Number.isNaN (c)) {
+	console.log ('(a+b+c)/3 = '+((a+b+c)/3))
+	}
+
+</script>
+</body>
+</html>
+
+	
